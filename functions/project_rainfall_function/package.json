@@ -1,0 +1,11 @@
+{
+	"name": "project_rainfall_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "sonirahul9321@gmail.com",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.21.2",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

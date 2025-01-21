@@ -1,0 +1,73 @@
+[debug] [2025-01-20T15:21:36.501Z] : 
+[debug] [2025-01-20T15:21:36.502Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T15:21:36.503Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-01-20T15:21:36.503Z] : CLI Version:  1.17.6
+[debug] [2025-01-20T15:21:36.503Z] : Platform:     win32
+[debug] [2025-01-20T15:21:36.504Z] : Node Version: v20.18.0
+[debug] [2025-01-20T15:21:36.504Z] : Time:         Mon Jan 20 2025 20:51:36 GMT+0530 (India Standard Time)
+[debug] [2025-01-20T15:21:36.504Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T15:21:36.504Z] : 
+[debug] [2025-01-20T15:21:37.999Z] : > authorizing via signed-in user option
+[debug] [2025-01-20T15:21:37.999Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-01-20T15:21:38.018Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022 
+
+[debug] [2025-01-20T15:21:39.318Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 15:21:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=74bf1407-dede-4417-b0b1-f4d0c6fc9c71;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=74bf1407-dede-4417-b0b1-f4d0c6fc9c71;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T15:21:39.325Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/environment 
+
+[debug] [2025-01-20T15:21:39.404Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 15:21:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=cf9cd2ae-f7a9-49e1-ab9b-7a147cad1c90;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cf9cd2ae-f7a9-49e1-ab9b-7a147cad1c90;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T15:21:39.429Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-20T15:21:39.511Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 15:21:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3fad51e7-dacb-4e94-8aa1-3139d8a92077;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3fad51e7-dacb-4e94-8aa1-3139d8a92077;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T15:21:39.514Z] : unknown eol undefined hence skipping check
+[debug] [2025-01-20T15:21:40.460Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/server/upsert 
+
+[debug] [2025-01-20T15:21:59.519Z] : CatalystError: API Error: write ECONNRESET
+    at API.<anonymous> (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:214:32)
+    at Generator.next (<anonymous>)
+    at C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request._callback (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:194:67)
+    at self.callback (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:531:35)
+    at Request.onRequestError (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:519:28)
+[warn] [2025-01-20T15:21:59.521Z] : ⚠ skipping deploy of target [project_rainfall_function] since API Error: write ECONNRESET
+[info] [2025-01-20T15:21:59.521Z] : 
+[error] [2025-01-20T15:21:59.522Z] : ✖ functions: deploy skipped
+[info] [2025-01-20T15:21:59.522Z] : 
+[error] [2025-01-20T15:21:59.522Z] : ✖ No components deployed!
+[error] [2025-01-20T15:21:59.528Z] : ✖ API Error: write ECONNRESET
+[debug] [2025-01-20T15:21:59.528Z] : Error Stack: CatalystError: API Error: write ECONNRESET
+    at API.<anonymous> (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:214:32)
+    at Generator.next (<anonymous>)
+    at C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request._callback (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:194:67)
+    at self.callback (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:531:35)
+    at Request.onRequestError (C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:519:28)
+[debug] [2025-01-20T15:21:59.528Z] : Original Error: Error: write ECONNRESET
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:95:16)
+[debug] [2025-01-20T15:21:59.528Z] : Error Status: 500
+[info] [2025-01-20T15:21:59.529Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2025-01-20T15:21:59.529Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-01-20T15:21:59.530Z] : TOTAL DURATION OF COMMAND EXEC : 21548
+[debug] [2025-01-20T15:21:59.543Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-20T15:21:59.934Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 15:21:59 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=a5fd424e-4411-44f1-b9d3-6174f7f83323;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a5fd424e-4411-44f1-b9d3-6174f7f83323;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6A1EC879CD30F7F6D3F89BB328808B97; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T15:21:59.935Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-20T15:21:59.937Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
