@@ -11277,3 +11277,1750 @@ Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 16:58:46 GMT","conten
 [debug] [2025-01-20T16:58:46.550Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
 
 [debug] [2025-01-20T16:58:46.552Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2025-01-21T20:34:32.481Z] : 
+[debug] [2025-01-21T20:34:32.483Z] : ----------------------------------------------------------------------
+[debug] [2025-01-21T20:34:32.484Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2025-01-21T20:34:32.484Z] : CLI Version:  1.17.6
+[debug] [2025-01-21T20:34:32.485Z] : Platform:     win32
+[debug] [2025-01-21T20:34:32.485Z] : Node Version: v20.18.0
+[debug] [2025-01-21T20:34:32.486Z] : Time:         Wed Jan 22 2025 02:04:32 GMT+0530 (India Standard Time)
+[debug] [2025-01-21T20:34:32.487Z] : ----------------------------------------------------------------------
+[debug] [2025-01-21T20:34:32.487Z] : 
+[debug] [2025-01-21T20:34:34.646Z] : > authorizing via signed-in user option
+[debug] [2025-01-21T20:34:34.647Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2025-01-21T20:34:34.674Z] : > refreshing access token <
+[debug] [2025-01-21T20:34:34.676Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-01-21T20:34:34.965Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 20:34:33 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=13e67ac15bc4d3ece130966123511df7; Path=/; Secure; HttpOnly","iamcsr=b965a5c8-e2bd-47f0-863d-7f2ebfa6f175;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b965a5c8-e2bd-47f0-863d-7f2ebfa6f175;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T20:34:34.980Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022 
+
+[debug] [2025-01-21T20:34:36.289Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 20:34:34 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=2925874d-e8a4-42f6-aee5-4861f54f0863;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2925874d-e8a4-42f6-aee5-4861f54f0863;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T20:34:36.291Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/environment 
+
+[debug] [2025-01-21T20:34:36.433Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 20:34:34 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4f324260-fff8-4c00-8c0a-247fe61031c2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4f324260-fff8-4c00-8c0a-247fe61031c2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T20:34:36.935Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-21T20:34:37.129Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 20:34:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=eda1b08a-7fd0-4ced-90ac-23d58c98d5f4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=eda1b08a-7fd0-4ced-90ac-23d58c98d5f4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T20:34:37.132Z] : unknown eol undefined hence skipping check
+[info] [2025-01-21T20:34:44.147Z] : [react-plugin]: Starting the development server...
+
+[info] [2025-01-21T20:34:44.151Z] : 
+[info] [2025-01-21T20:34:44.152Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2025-01-21T20:34:44.152Z] : 
+[info] [2025-01-21T20:34:46.843Z] : 
+[info] [2025-01-21T20:34:46.844Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-01-21T20:34:46.844Z] : ℹ project_rainfall_function: http://localhost:3000/server/project_rainfall_function/
+[info] [2025-01-21T20:34:46.845Z] : 
+[info] [2025-01-21T20:34:46.845Z] : 
+[info] [2025-01-21T20:34:46.845Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-01-21T20:34:46.846Z] : ℹ client[react-app]: http://localhost:3000/app/
+[info] [2025-01-21T20:34:46.846Z] : 
+[info] [2025-01-21T20:35:24.313Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T20:35:24.316Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T20:35:24.317Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T20:35:24.318Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T20:36:13.900Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T20:36:15.799Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T20:36:15.800Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T20:36:15.801Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T20:36:15.802Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T20:36:15.966Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T20:58:22.157Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T20:58:30.043Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T20:58:30.046Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T20:58:30.047Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T20:58:30.048Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T20:58:56.269Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T20:58:57.016Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T20:58:57.018Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T20:58:57.019Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T20:58:57.020Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T20:59:20.111Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T20:59:20.997Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T20:59:20.998Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T20:59:20.998Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T20:59:20.999Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T20:59:21.115Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T20:59:42.996Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T20:59:43.853Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T20:59:43.854Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T20:59:43.855Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T20:59:43.855Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:00:40.318Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:00:40.942Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:00:40.944Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:00:40.945Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:00:40.945Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:00:41.211Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:00:56.718Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:00:57.929Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:00:57.930Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:00:57.931Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:00:57.931Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:01:08.517Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:01:08.997Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:01:08.998Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:01:08.998Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:01:08.999Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:01:09.100Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:01:33.219Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:01:34.521Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:01:34.527Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:01:34.529Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:01:34.530Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:01:50.573Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:01:51.234Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:01:51.235Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:01:51.235Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:01:51.236Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:01:51.345Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:03:30.803Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:03:31.389Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:03:31.390Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:03:31.390Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:03:31.391Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:03:31.493Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:03:46.391Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:03:47.138Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:03:47.139Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:03:47.140Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:03:47.140Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:03:47.243Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:06:16.540Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:06:17.484Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:06:17.486Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:06:17.489Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:06:17.489Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:06:17.615Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:06:35.110Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:06:35.603Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:06:35.605Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:06:35.606Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:06:35.606Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:06:35.721Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:07:14.901Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:07:15.400Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:07:15.401Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:07:15.401Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:07:15.401Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:07:15.511Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:07:44.085Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:07:46.484Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:07:46.485Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:07:46.485Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:07:46.486Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:08:02.424Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:08:02.977Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:08:02.979Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:08:02.980Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:08:02.980Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:09:13.124Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:09:14.370Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:09:14.371Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:09:14.372Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:09:14.373Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:09:14.486Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:09:50.730Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:09:51.935Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:09:51.936Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 25:10:  'ListTodo' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used               @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:09:51.937Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:09:51.939Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:09:52.254Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:14:28.281Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:14:29.968Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:14:29.972Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:14:29.973Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:14:29.973Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:15:29.704Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:15:30.954Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:15:30.956Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:15:30.956Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:15:30.957Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:16:38.805Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:16:40.141Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:16:40.143Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:16:40.144Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:16:40.144Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:16:40.244Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:16:40.692Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:16:40.693Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:16:40.694Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:16:40.694Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:17:06.884Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:17:07.807Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:17:07.809Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:17:07.810Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:17:07.811Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:18:40.119Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:18:42.328Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:18:42.330Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:18:42.331Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:18:42.331Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:19:14.764Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:19:15.600Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:19:15.603Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 5:5:    'AlertDialog' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 6:5:    'AlertDialogAction' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 7:5:    'AlertDialogCancel' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 8:5:    'AlertDialogContent' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 9:5:    'AlertDialogDescription' is defined but never used   @typescript-eslint/no-unused-vars
+  Line 10:5:   'AlertDialogFooter' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 11:5:   'AlertDialogHeader' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 12:5:   'AlertDialogTitle' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 13:5:   'AlertDialogTrigger' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 16:5:   'Dialog' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 17:5:   'DialogContent' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 18:5:   'DialogHeader' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 19:5:   'DialogTitle' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 20:5:   'DialogTrigger' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 21:5:   'DialogFooter' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 22:5:   'DialogClose' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:10:  'ListTodo' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 25:20:  'Pencil' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 25:48:  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 27:10:  'Textarea' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:8:   'axios' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 30:10:  'BACKEND_PRODUCTION' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 31:10:  'toast' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 32:10:  'Badge' is defined but never used                    @typescript-eslint/no-unused-vars
+  Line 48:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 50:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:19:15.603Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:19:15.604Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:19:15.793Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:20:57.458Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:20:58.719Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:20:58.721Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\TaskCard.tsx
+  Line 6:10:  'ListTodo' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 6:28:  'PlusCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:40:  'Search' is defined but never used      @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 21:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 23:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:20:58.722Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:20:58.722Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:21:11.936Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:21:13.115Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:21:13.116Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 21:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 23:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:21:13.117Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:21:13.117Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:21:22.372Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:21:22.870Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:21:22.872Z] : [react-plugin]: [eslint] 
+src\App.tsx
+  Line 4:8:  'AllTask' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\app-sidebar.tsx
+  Line 1:10:  'Calendar' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 1:20:  'Edit' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 1:32:  'Inbox' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 1:49:  'Search' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 1:57:  'Settings' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 10:3:  'SidebarMenuButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 21:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 23:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:21:22.873Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:21:22.874Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:21:22.985Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2025-01-21T21:21:39.100Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:21:40.042Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-01-21T21:21:40.042Z] : [react-plugin]: Module not found: Error: Can't resolve './components/IndividualTask' in 'D:\Reudan-Assignment\react-app\src'
+[info] [2025-01-21T21:22:01.423Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:22:02.302Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-01-21T21:22:02.303Z] : [react-plugin]: Module not found: Error: Can't resolve './components/IndividualTask' in 'D:\Reudan-Assignment\react-app\src'
+[info] [2025-01-21T21:22:33.654Z] : [react-plugin]: Compiling...
+[info] [2025-01-21T21:22:35.695Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:22:35.696Z] : [react-plugin]: [eslint] 
+src\components\IndividualTask.tsx
+  Line 9:32:  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\components\edit-task.tsx
+  Line 21:9:   'navigate' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 23:11:  'handleSaveTask' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\DeleteTask.ts
+  Line 2:27:  'TaskProps' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:22:35.696Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:22:35.697Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:23:34.485Z] : Shutting down server
+[info] [2025-01-21T21:23:34.715Z] : 
+[info] [2025-01-21T21:23:34.717Z] : ✔ Shutdown complete
+[debug] [2025-01-21T21:23:34.717Z] : NO ERRORS REGISTERED
+[debug] [2025-01-21T21:23:34.718Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-01-21T21:23:34.718Z] : TOTAL DURATION OF COMMAND EXEC : 2940108
+[debug] [2025-01-21T21:23:34.758Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-21T21:23:35.254Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:23:33 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=791410b4-56f9-48b9-bde0-de3512e01f73;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=791410b4-56f9-48b9-bde0-de3512e01f73;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6187A864D8C32D6101D7AE26188861C7; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:23:35.257Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-21T21:23:35.262Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2025-01-21T21:36:46.883Z] : 
+[debug] [2025-01-21T21:36:46.892Z] : ----------------------------------------------------------------------
+[debug] [2025-01-21T21:36:46.893Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-01-21T21:36:46.893Z] : CLI Version:  1.17.6
+[debug] [2025-01-21T21:36:46.894Z] : Platform:     win32
+[debug] [2025-01-21T21:36:46.894Z] : Node Version: v20.18.0
+[debug] [2025-01-21T21:36:46.894Z] : Time:         Wed Jan 22 2025 03:06:46 GMT+0530 (India Standard Time)
+[debug] [2025-01-21T21:36:46.895Z] : ----------------------------------------------------------------------
+[debug] [2025-01-21T21:36:46.896Z] : 
+[debug] [2025-01-21T21:36:48.629Z] : > authorizing via signed-in user option
+[debug] [2025-01-21T21:36:48.629Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-01-21T21:36:48.655Z] : > refreshing access token <
+[debug] [2025-01-21T21:36:48.657Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-01-21T21:36:48.999Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:36:46 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=dea4bb29906843a6fbdf3bd5c0e43d1d; Path=/; Secure; HttpOnly","iamcsr=f7291536-d77d-43a7-a194-9e9dcdba987a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f7291536-d77d-43a7-a194-9e9dcdba987a;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:36:49.014Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022 
+
+[debug] [2025-01-21T21:36:49.242Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:36:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4812f325-3e15-48ec-88b2-7b5ea4e63b7e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4812f325-3e15-48ec-88b2-7b5ea4e63b7e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:36:49.244Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/environment 
+
+[debug] [2025-01-21T21:36:49.320Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:36:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=8c4557ac-c09d-4710-b134-e807fad06d7e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8c4557ac-c09d-4710-b134-e807fad06d7e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:36:49.341Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-21T21:36:49.408Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:36:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b1ea8048-0993-474d-b820-6258a3b202cd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b1ea8048-0993-474d-b820-6258a3b202cd;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:36:49.413Z] : unknown eol undefined hence skipping check
+[debug] [2025-01-21T21:36:50.307Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/server/upsert 
+
+[debug] [2025-01-21T21:36:52.361Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:36:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=c3c7f239-17bc-43cd-b6ef-f5f171e50f78;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c3c7f239-17bc-43cd-b6ef-f5f171e50f78;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-21T21:36:52.551Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-01-21T21:36:52.551Z] : ℹ Building Application...
+[info] [2025-01-21T21:36:55.686Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-01-21T21:37:51.009Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-21T21:37:51.013Z] : [react-plugin]: [eslint] 
+src\components\ui\sidebar.tsx
+  Line 36:7:  'SidebarContext' is already defined  @typescript-eslint/no-redeclare
+
+src\hooks\allTasks.tsx
+  Line 4:8:  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\index.tsx
+  Line 2:8:   'ReactDOM' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 9:27:  'SidebarTrigger' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\lib\UpdateTask.ts
+  Line 13:15:  'response' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-21T21:37:51.014Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-21T21:37:51.016Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-21T21:37:51.017Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-01-21T21:37:51.067Z] : [react-plugin]:   192.65 kB  build\static\js\main.965d4d23.js
+[info] [2025-01-21T21:37:51.068Z] : [react-plugin]:   7.72 kB    build\static\css\main.82d57d10.css
+[info] [2025-01-21T21:37:51.068Z] : [react-plugin]:   1.66 kB    build\static\js\453.6a0a8fee.chunk.js
+[info] [2025-01-21T21:37:51.069Z] : [react-plugin]:  
+[debug] [2025-01-21T21:37:52.487Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/webapp 
+
+[debug] [2025-01-21T21:37:54.576Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:37:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=5d6adcf8-1770-49e3-9dc7-003d498e121e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5d6adcf8-1770-49e3-9dc7-003d498e121e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-21T21:37:54.580Z] : 
+[info] [2025-01-21T21:37:54.581Z] : ℹ functions(project_rainfall_function): URL => https://project-rainfall-60036577687.development.catalystserverless.in/server/project_rainfall_function/
+[info] [2025-01-21T21:37:54.583Z] : ✔ functions(project_rainfall_function): deploy successful
+[info] [2025-01-21T21:37:54.583Z] : 
+[info] [2025-01-21T21:37:54.585Z] : ✔ client: deploy successful
+[info] [2025-01-21T21:37:54.586Z] : ℹ client: URL => https://project-rainfall-60036577687.development.catalystserverless.in/app/index.html
+[info] [2025-01-21T21:37:54.586Z] : 
+[info] [2025-01-21T21:37:54.587Z] : ✔ Catalyst deploy complete!
+[debug] [2025-01-21T21:37:54.589Z] : NO ERRORS REGISTERED
+[debug] [2025-01-21T21:37:54.591Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-01-21T21:37:54.591Z] : TOTAL DURATION OF COMMAND EXEC : 65988
+[debug] [2025-01-21T21:37:54.652Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-21T21:37:54.757Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:37:52 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=d3a57d75-955c-446d-b3f2-16d362c3fe30;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d3a57d75-955c-446d-b3f2-16d362c3fe30;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=2E1D60FFD786B6365BCA276E58C3852B; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:37:54.758Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-21T21:37:54.767Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2025-01-21T21:39:31.795Z] : 
+[debug] [2025-01-21T21:39:31.802Z] : ----------------------------------------------------------------------
+[debug] [2025-01-21T21:39:31.802Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-01-21T21:39:31.802Z] : CLI Version:  1.17.6
+[debug] [2025-01-21T21:39:31.803Z] : Platform:     win32
+[debug] [2025-01-21T21:39:31.803Z] : Node Version: v20.18.0
+[debug] [2025-01-21T21:39:31.804Z] : Time:         Wed Jan 22 2025 03:09:31 GMT+0530 (India Standard Time)
+[debug] [2025-01-21T21:39:31.804Z] : ----------------------------------------------------------------------
+[debug] [2025-01-21T21:39:31.804Z] : 
+[debug] [2025-01-21T21:39:33.324Z] : > authorizing via signed-in user option
+[debug] [2025-01-21T21:39:33.325Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-01-21T21:39:33.346Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022 
+
+[debug] [2025-01-21T21:39:33.656Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:39:31 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=eac7cf78-b6a4-4a77-923f-a33c3139816d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=eac7cf78-b6a4-4a77-923f-a33c3139816d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:39:33.668Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/environment 
+
+[debug] [2025-01-21T21:39:33.744Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:39:31 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=159d6e56-8d57-4fc4-8887-a9d3886ce609;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=159d6e56-8d57-4fc4-8887-a9d3886ce609;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:39:33.781Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-21T21:39:33.857Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:39:31 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=fa4450a3-76fe-4e38-ae9c-90e18491e6fd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fa4450a3-76fe-4e38-ae9c-90e18491e6fd;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:39:33.863Z] : unknown eol undefined hence skipping check
+[debug] [2025-01-21T21:39:34.860Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/server/upsert 
+
+[debug] [2025-01-21T21:39:37.214Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:39:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=043386a6-1cc0-4d7e-a435-addf47075f59;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=043386a6-1cc0-4d7e-a435-addf47075f59;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-21T21:39:37.509Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-01-21T21:39:37.510Z] : ℹ Building Application...
+[info] [2025-01-21T21:39:40.989Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-01-21T21:40:02.788Z] : [react-plugin]: Compiled successfully.
+
+[info] [2025-01-21T21:40:02.789Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-01-21T21:40:02.875Z] : [react-plugin]:   192.69 kB (+36 B)  build\static\js\main.ab6add9a.js
+[info] [2025-01-21T21:40:02.877Z] : [react-plugin]:   7.72 kB            build\static\css\main.82d57d10.css
+[info] [2025-01-21T21:40:02.878Z] : [react-plugin]:   1.66 kB            build\static\js\453.6a0a8fee.chunk.js
+[info] [2025-01-21T21:40:02.879Z] : [react-plugin]:  
+[debug] [2025-01-21T21:40:06.486Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/4524000000007022/webapp 
+
+[debug] [2025-01-21T21:40:08.105Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:40:06 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=e1c9547c-b496-4cd3-ba90-586e5c22f381;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e1c9547c-b496-4cd3-ba90-586e5c22f381;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-21T21:40:08.109Z] : 
+[info] [2025-01-21T21:40:08.111Z] : ℹ functions(project_rainfall_function): URL => https://project-rainfall-60036577687.development.catalystserverless.in/server/project_rainfall_function/
+[info] [2025-01-21T21:40:08.112Z] : ✔ functions(project_rainfall_function): deploy successful
+[info] [2025-01-21T21:40:08.112Z] : 
+[info] [2025-01-21T21:40:08.113Z] : ✔ client: deploy successful
+[info] [2025-01-21T21:40:08.114Z] : ℹ client: URL => https://project-rainfall-60036577687.development.catalystserverless.in/app/index.html
+[info] [2025-01-21T21:40:08.115Z] : 
+[info] [2025-01-21T21:40:08.115Z] : ✔ Catalyst deploy complete!
+[debug] [2025-01-21T21:40:08.116Z] : NO ERRORS REGISTERED
+[debug] [2025-01-21T21:40:08.118Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-01-21T21:40:08.118Z] : TOTAL DURATION OF COMMAND EXEC : 34818
+[debug] [2025-01-21T21:40:08.150Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-21T21:40:08.273Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Tue, 21 Jan 2025 21:40:06 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=77488564-3cf1-47b0-af47-5fd3c8916c28;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=77488564-3cf1-47b0-af47-5fd3c8916c28;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=03ADDB409757B166122E50A298DBBF61; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-21T21:40:08.274Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-21T21:40:08.287Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
